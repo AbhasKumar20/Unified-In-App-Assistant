@@ -326,6 +326,82 @@
         }
       ],
       "conversation_id": null
+    },
+    {
+      "id": "TKT-2025-9C2",
+      "title": "Missing GSTIN in vendor invoices",
+      "description": "6 invoices from IndiSky failed processing due to missing GSTIN. Total amount affected: ₹721,500.00. Requires vendor to provide GSTIN and resubmit invoices.",
+      "status": "open",
+      "priority": "high",
+      "created_by": "user_admin_001",
+      "assigned_to": "compliance_team",
+      "created_date": "2025-09-14T17:29:07.771057Z",
+      "resolved_date": null,
+      "workspace_id": "ws_fintech_001",
+      "affected_invoices": [
+        "inv_001",
+        "inv_002",
+        "inv_003",
+        "inv_004",
+        "inv_005",
+        "inv_006"
+      ],
+      "resolution": null,
+      "updates": [
+        {
+          "timestamp": "2025-09-14T17:29:07.771060Z",
+          "status": "open",
+          "note": "Ticket created automatically by assistant",
+          "updated_by": "system"
+        }
+      ],
+      "conversation_id": null
+    },
+    {
+      "id": "TKT-2025-613",
+      "title": "General Support Request",
+      "description": "Support request created via assistant",
+      "status": "open",
+      "priority": "medium",
+      "created_by": "user_analyst_001",
+      "assigned_to": "compliance_team",
+      "created_date": "2025-09-14T17:35:08.768668Z",
+      "resolved_date": null,
+      "workspace_id": "ws_fintech_001",
+      "affected_invoices": [],
+      "resolution": null,
+      "updates": [
+        {
+          "timestamp": "2025-09-14T17:35:08.768671Z",
+          "status": "open",
+          "note": "Ticket created automatically by assistant",
+          "updated_by": "system"
+        }
+      ],
+      "conversation_id": null
+    },
+    {
+      "id": "TKT-2025-771",
+      "title": "General Support Request",
+      "description": "Support request created via assistant",
+      "status": "open",
+      "priority": "medium",
+      "created_by": "user_manager_001",
+      "assigned_to": "compliance_team",
+      "created_date": "2025-09-14T17:36:09.387001Z",
+      "resolved_date": null,
+      "workspace_id": "ws_fintech_001",
+      "affected_invoices": [],
+      "resolution": null,
+      "updates": [
+        {
+          "timestamp": "2025-09-14T17:36:09.387004Z",
+          "status": "open",
+          "note": "Ticket created automatically by assistant",
+          "updated_by": "system"
+        }
+      ],
+      "conversation_id": null
     }
   ]
 }

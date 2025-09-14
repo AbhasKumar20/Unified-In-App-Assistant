@@ -234,7 +234,7 @@
       "user_id": "user_analyst_001",
       "workspace_id": "ws_fintech_001",
       "started_date": "2025-09-14T16:33:30.108345Z",
-      "last_updated": "2025-09-14T16:37:33.895164Z",
+      "last_updated": "2025-09-14T17:35:28.829001Z",
       "status": "active",
       "messages": [
         {
@@ -729,6 +729,776 @@
               "ticket_id": "TKT-2025-7B6"
             }
           ]
+        },
+        {
+          "id": "msg_37828e36",
+          "timestamp": "2025-09-14T17:17:37.361974Z",
+          "role": "user",
+          "content": "Filter invoices for last month, vendor=IndiSky, status=failed"
+        },
+        {
+          "id": "msg_4cf22c5e",
+          "timestamp": "2025-09-14T17:17:37.363250Z",
+          "role": "assistant",
+          "content": "I found 6 invoices from IndiSky for 2024-08-01 to 2024-08-31 with status 'failed' . Total amount: ₹721,500.00 . All failures are due to missing gstin.",
+          "actions_performed": [
+            {
+              "action": "filter_invoices",
+              "parameters": {
+                "date_range": {
+                  "start": "2024-08-01",
+                  "end": "2024-08-31"
+                },
+                "vendor": "IndiSky",
+                "status": "failed"
+              },
+              "results_count": 6,
+              "data_consulted": [
+                "invoices",
+                "vendors"
+              ]
+            }
+          ],
+          "data_shown": {
+            "invoice_ids": [
+              "inv_001",
+              "inv_002",
+              "inv_003",
+              "inv_004",
+              "inv_005",
+              "inv_006"
+            ],
+            "total_amount": 721500.0,
+            "invoices": [
+              {
+                "id": "inv_001",
+                "invoice_number": "ISK-2024-001",
+                "date": "2024-08-15",
+                "vendor": "IndiSky",
+                "amount": 125000.0,
+                "currency": "INR",
+                "status": "failed",
+                "failure_reason": "missing_gstin",
+                "gstin_required": true,
+                "gstin_provided": null,
+                "workspace_id": "ws_fintech_001",
+                "created_by": "user_analyst_001",
+                "file_path": "/uploads/invoices/ISK-2024-001.pdf",
+                "payment_terms": "Net 30",
+                "category": "aviation_services"
+              },
+              {
+                "id": "inv_002",
+                "invoice_number": "ISK-2024-002",
+                "date": "2024-08-18",
+                "vendor": "IndiSky",
+                "amount": 87500.0,
+                "currency": "INR",
+                "status": "failed",
+                "failure_reason": "missing_gstin",
+                "gstin_required": true,
+                "gstin_provided": null,
+                "workspace_id": "ws_fintech_001",
+                "created_by": "user_analyst_001",
+                "file_path": "/uploads/invoices/ISK-2024-002.pdf",
+                "payment_terms": "Net 30",
+                "category": "aviation_services"
+              },
+              {
+                "id": "inv_003",
+                "invoice_number": "ISK-2024-003",
+                "date": "2024-08-22",
+                "vendor": "IndiSky",
+                "amount": 156000.0,
+                "currency": "INR",
+                "status": "failed",
+                "failure_reason": "missing_gstin",
+                "gstin_required": true,
+                "gstin_provided": null,
+                "workspace_id": "ws_fintech_001",
+                "created_by": "user_analyst_001",
+                "file_path": "/uploads/invoices/ISK-2024-003.pdf",
+                "payment_terms": "Net 30",
+                "category": "aviation_services"
+              },
+              {
+                "id": "inv_004",
+                "invoice_number": "ISK-2024-004",
+                "date": "2024-08-25",
+                "vendor": "IndiSky",
+                "amount": 98000.0,
+                "currency": "INR",
+                "status": "failed",
+                "failure_reason": "missing_gstin",
+                "gstin_required": true,
+                "gstin_provided": null,
+                "workspace_id": "ws_fintech_001",
+                "created_by": "user_analyst_001",
+                "file_path": "/uploads/invoices/ISK-2024-004.pdf",
+                "payment_terms": "Net 30",
+                "category": "aviation_services"
+              },
+              {
+                "id": "inv_005",
+                "invoice_number": "ISK-2024-005",
+                "date": "2024-08-28",
+                "vendor": "IndiSky",
+                "amount": 112000.0,
+                "currency": "INR",
+                "status": "failed",
+                "failure_reason": "missing_gstin",
+                "gstin_required": true,
+                "gstin_provided": null,
+                "workspace_id": "ws_fintech_001",
+                "created_by": "user_analyst_001",
+                "file_path": "/uploads/invoices/ISK-2024-005.pdf",
+                "payment_terms": "Net 30",
+                "category": "aviation_services"
+              },
+              {
+                "id": "inv_006",
+                "invoice_number": "ISK-2024-006",
+                "date": "2024-08-30",
+                "vendor": "IndiSky",
+                "amount": 143000.0,
+                "currency": "INR",
+                "status": "failed",
+                "failure_reason": "missing_gstin",
+                "gstin_required": true,
+                "gstin_provided": null,
+                "workspace_id": "ws_fintech_001",
+                "created_by": "user_analyst_001",
+                "file_path": "/uploads/invoices/ISK-2024-006.pdf",
+                "payment_terms": "Net 30",
+                "category": "aviation_services"
+              }
+            ],
+            "failure_reasons": {
+              "missing_gstin": 6
+            }
+          }
+        },
+        {
+          "id": "msg_49c61918",
+          "timestamp": "2025-09-14T17:17:48.707683Z",
+          "role": "user",
+          "content": "Why did this fail?"
+        },
+        {
+          "id": "msg_9a0dd303",
+          "timestamp": "2025-09-14T17:17:48.709338Z",
+          "role": "assistant",
+          "content": "All 6 invoices failed because GSTIN (GST Identification Number) is missing from the invoice files. Indian tax law requires GSTIN for B2B transactions above ₹500. The invoices: ISK-2024-001, ISK-2024-002, ISK-2024-003, ISK-2024-004, ISK-2024-005, ISK-2024-006. \n\nWould you like me to create a ticket and notify you when this is fixed?",
+          "actions_performed": [
+            {
+              "action": "analyze_failures",
+              "parameters": {
+                "invoice_ids": [
+                  "inv_001",
+                  "inv_002",
+                  "inv_003",
+                  "inv_004",
+                  "inv_005",
+                  "inv_006"
+                ]
+              },
+              "data_consulted": [
+                "invoices",
+                "compliance_rules",
+                "vendors"
+              ]
+            }
+          ],
+          "data_shown": {
+            "total_invoices": 6,
+            "failure_reasons": {
+              "missing_gstin": 6
+            },
+            "total_amount": 721500.0,
+            "affected_vendors": [
+              "IndiSky"
+            ],
+            "compliance_issues": [
+              {
+                "invoice_id": "inv_001",
+                "issue": "GSTIN required for B2B transactions >₹500",
+                "vendor": "IndiSky",
+                "amount": 125000.0
+              },
+              {
+                "invoice_id": "inv_002",
+                "issue": "GSTIN required for B2B transactions >₹500",
+                "vendor": "IndiSky",
+                "amount": 87500.0
+              },
+              {
+                "invoice_id": "inv_003",
+                "issue": "GSTIN required for B2B transactions >₹500",
+                "vendor": "IndiSky",
+                "amount": 156000.0
+              },
+              {
+                "invoice_id": "inv_004",
+                "issue": "GSTIN required for B2B transactions >₹500",
+                "vendor": "IndiSky",
+                "amount": 98000.0
+              },
+              {
+                "invoice_id": "inv_005",
+                "issue": "GSTIN required for B2B transactions >₹500",
+                "vendor": "IndiSky",
+                "amount": 112000.0
+              },
+              {
+                "invoice_id": "inv_006",
+                "issue": "GSTIN required for B2B transactions >₹500",
+                "vendor": "IndiSky",
+                "amount": 143000.0
+              }
+            ]
+          },
+          "explanation": {
+            "root_cause": "missing_gstin",
+            "affected_files": 6,
+            "compliance_requirement": "GSTIN mandatory for B2B transactions >₹500",
+            "next_steps": "Contact vendor for updated invoices with GSTIN",
+            "suggested_action": "Create support ticket for GSTIN compliance issue"
+          }
+        },
+        {
+          "id": "msg_44a61d9d",
+          "timestamp": "2025-09-14T17:19:58.443998Z",
+          "role": "user",
+          "content": "Why did this fail?"
+        },
+        {
+          "id": "msg_8569f235",
+          "timestamp": "2025-09-14T17:19:58.445814Z",
+          "role": "assistant",
+          "content": "I don't have any recent invoice data to analyze. Please filter some invoices first."
+        },
+        {
+          "id": "msg_fc00a188",
+          "timestamp": "2025-09-14T17:20:18.437547Z",
+          "role": "user",
+          "content": "Filter invoices for last month, vendor=IndiSky, status=failed"
+        },
+        {
+          "id": "msg_60d3dbed",
+          "timestamp": "2025-09-14T17:20:18.438635Z",
+          "role": "assistant",
+          "content": "I found 6 invoices from IndiSky for 2024-08-01 to 2024-08-31 with status 'failed' . Total amount: ₹721,500.00 . All failures are due to missing gstin.",
+          "actions_performed": [
+            {
+              "action": "filter_invoices",
+              "parameters": {
+                "date_range": {
+                  "start": "2024-08-01",
+                  "end": "2024-08-31"
+                },
+                "vendor": "IndiSky",
+                "status": "failed"
+              },
+              "results_count": 6,
+              "data_consulted": [
+                "invoices",
+                "vendors"
+              ]
+            }
+          ],
+          "data_shown": {
+            "invoice_ids": [
+              "inv_001",
+              "inv_002",
+              "inv_003",
+              "inv_004",
+              "inv_005",
+              "inv_006"
+            ],
+            "total_amount": 721500.0,
+            "invoices": [
+              {
+                "id": "inv_001",
+                "invoice_number": "ISK-2024-001",
+                "date": "2024-08-15",
+                "vendor": "IndiSky",
+                "amount": 125000.0,
+                "currency": "INR",
+                "status": "failed",
+                "failure_reason": "missing_gstin",
+                "gstin_required": true,
+                "gstin_provided": null,
+                "workspace_id": "ws_fintech_001",
+                "created_by": "user_analyst_001",
+                "file_path": "/uploads/invoices/ISK-2024-001.pdf",
+                "payment_terms": "Net 30",
+                "category": "aviation_services"
+              },
+              {
+                "id": "inv_002",
+                "invoice_number": "ISK-2024-002",
+                "date": "2024-08-18",
+                "vendor": "IndiSky",
+                "amount": 87500.0,
+                "currency": "INR",
+                "status": "failed",
+                "failure_reason": "missing_gstin",
+                "gstin_required": true,
+                "gstin_provided": null,
+                "workspace_id": "ws_fintech_001",
+                "created_by": "user_analyst_001",
+                "file_path": "/uploads/invoices/ISK-2024-002.pdf",
+                "payment_terms": "Net 30",
+                "category": "aviation_services"
+              },
+              {
+                "id": "inv_003",
+                "invoice_number": "ISK-2024-003",
+                "date": "2024-08-22",
+                "vendor": "IndiSky",
+                "amount": 156000.0,
+                "currency": "INR",
+                "status": "failed",
+                "failure_reason": "missing_gstin",
+                "gstin_required": true,
+                "gstin_provided": null,
+                "workspace_id": "ws_fintech_001",
+                "created_by": "user_analyst_001",
+                "file_path": "/uploads/invoices/ISK-2024-003.pdf",
+                "payment_terms": "Net 30",
+                "category": "aviation_services"
+              },
+              {
+                "id": "inv_004",
+                "invoice_number": "ISK-2024-004",
+                "date": "2024-08-25",
+                "vendor": "IndiSky",
+                "amount": 98000.0,
+                "currency": "INR",
+                "status": "failed",
+                "failure_reason": "missing_gstin",
+                "gstin_required": true,
+                "gstin_provided": null,
+                "workspace_id": "ws_fintech_001",
+                "created_by": "user_analyst_001",
+                "file_path": "/uploads/invoices/ISK-2024-004.pdf",
+                "payment_terms": "Net 30",
+                "category": "aviation_services"
+              },
+              {
+                "id": "inv_005",
+                "invoice_number": "ISK-2024-005",
+                "date": "2024-08-28",
+                "vendor": "IndiSky",
+                "amount": 112000.0,
+                "currency": "INR",
+                "status": "failed",
+                "failure_reason": "missing_gstin",
+                "gstin_required": true,
+                "gstin_provided": null,
+                "workspace_id": "ws_fintech_001",
+                "created_by": "user_analyst_001",
+                "file_path": "/uploads/invoices/ISK-2024-005.pdf",
+                "payment_terms": "Net 30",
+                "category": "aviation_services"
+              },
+              {
+                "id": "inv_006",
+                "invoice_number": "ISK-2024-006",
+                "date": "2024-08-30",
+                "vendor": "IndiSky",
+                "amount": 143000.0,
+                "currency": "INR",
+                "status": "failed",
+                "failure_reason": "missing_gstin",
+                "gstin_required": true,
+                "gstin_provided": null,
+                "workspace_id": "ws_fintech_001",
+                "created_by": "user_analyst_001",
+                "file_path": "/uploads/invoices/ISK-2024-006.pdf",
+                "payment_terms": "Net 30",
+                "category": "aviation_services"
+              }
+            ],
+            "failure_reasons": {
+              "missing_gstin": 6
+            }
+          }
+        },
+        {
+          "id": "msg_9e6d8301",
+          "timestamp": "2025-09-14T17:20:28.359956Z",
+          "role": "user",
+          "content": "Why did this fail?"
+        },
+        {
+          "id": "msg_c7e3e367",
+          "timestamp": "2025-09-14T17:20:28.361490Z",
+          "role": "assistant",
+          "content": "All 6 invoices failed because GSTIN (GST Identification Number) is missing from the invoice files. Indian tax law requires GSTIN for B2B transactions above ₹500. The invoices: ISK-2024-001, ISK-2024-002, ISK-2024-003, ISK-2024-004, ISK-2024-005, ISK-2024-006. \n\nWould you like me to create a ticket and notify you when this is fixed?",
+          "actions_performed": [
+            {
+              "action": "analyze_failures",
+              "parameters": {
+                "invoice_ids": [
+                  "inv_001",
+                  "inv_002",
+                  "inv_003",
+                  "inv_004",
+                  "inv_005",
+                  "inv_006"
+                ]
+              },
+              "data_consulted": [
+                "invoices",
+                "compliance_rules",
+                "vendors"
+              ]
+            }
+          ],
+          "data_shown": {
+            "total_invoices": 6,
+            "failure_reasons": {
+              "missing_gstin": 6
+            },
+            "total_amount": 721500.0,
+            "affected_vendors": [
+              "IndiSky"
+            ],
+            "compliance_issues": [
+              {
+                "invoice_id": "inv_001",
+                "issue": "GSTIN required for B2B transactions >₹500",
+                "vendor": "IndiSky",
+                "amount": 125000.0
+              },
+              {
+                "invoice_id": "inv_002",
+                "issue": "GSTIN required for B2B transactions >₹500",
+                "vendor": "IndiSky",
+                "amount": 87500.0
+              },
+              {
+                "invoice_id": "inv_003",
+                "issue": "GSTIN required for B2B transactions >₹500",
+                "vendor": "IndiSky",
+                "amount": 156000.0
+              },
+              {
+                "invoice_id": "inv_004",
+                "issue": "GSTIN required for B2B transactions >₹500",
+                "vendor": "IndiSky",
+                "amount": 98000.0
+              },
+              {
+                "invoice_id": "inv_005",
+                "issue": "GSTIN required for B2B transactions >₹500",
+                "vendor": "IndiSky",
+                "amount": 112000.0
+              },
+              {
+                "invoice_id": "inv_006",
+                "issue": "GSTIN required for B2B transactions >₹500",
+                "vendor": "IndiSky",
+                "amount": 143000.0
+              }
+            ]
+          },
+          "explanation": {
+            "root_cause": "missing_gstin",
+            "affected_files": 6,
+            "compliance_requirement": "GSTIN mandatory for B2B transactions >₹500",
+            "next_steps": "Contact vendor for updated invoices with GSTIN",
+            "suggested_action": "Create support ticket for GSTIN compliance issue"
+          }
+        },
+        {
+          "id": "msg_df5dbfbc",
+          "timestamp": "2025-09-14T17:21:35.900435Z",
+          "role": "user",
+          "content": "Filter invoices for last month, vendor=IndiSky, status=failed"
+        },
+        {
+          "id": "msg_9504ab78",
+          "timestamp": "2025-09-14T17:21:35.902115Z",
+          "role": "assistant",
+          "content": "I found 6 invoices from IndiSky for 2024-08-01 to 2024-08-31 with status 'failed' . Total amount: ₹721,500.00 . All failures are due to missing gstin.",
+          "actions_performed": [
+            {
+              "action": "filter_invoices",
+              "parameters": {
+                "date_range": {
+                  "start": "2024-08-01",
+                  "end": "2024-08-31"
+                },
+                "vendor": "IndiSky",
+                "status": "failed"
+              },
+              "results_count": 6,
+              "data_consulted": [
+                "invoices",
+                "vendors"
+              ]
+            }
+          ],
+          "data_shown": {
+            "invoice_ids": [
+              "inv_001",
+              "inv_002",
+              "inv_003",
+              "inv_004",
+              "inv_005",
+              "inv_006"
+            ],
+            "total_amount": 721500.0,
+            "invoices": [
+              {
+                "id": "inv_001",
+                "invoice_number": "ISK-2024-001",
+                "date": "2024-08-15",
+                "vendor": "IndiSky",
+                "amount": 125000.0,
+                "currency": "INR",
+                "status": "failed",
+                "failure_reason": "missing_gstin",
+                "gstin_required": true,
+                "gstin_provided": null,
+                "workspace_id": "ws_fintech_001",
+                "created_by": "user_analyst_001",
+                "file_path": "/uploads/invoices/ISK-2024-001.pdf",
+                "payment_terms": "Net 30",
+                "category": "aviation_services"
+              },
+              {
+                "id": "inv_002",
+                "invoice_number": "ISK-2024-002",
+                "date": "2024-08-18",
+                "vendor": "IndiSky",
+                "amount": 87500.0,
+                "currency": "INR",
+                "status": "failed",
+                "failure_reason": "missing_gstin",
+                "gstin_required": true,
+                "gstin_provided": null,
+                "workspace_id": "ws_fintech_001",
+                "created_by": "user_analyst_001",
+                "file_path": "/uploads/invoices/ISK-2024-002.pdf",
+                "payment_terms": "Net 30",
+                "category": "aviation_services"
+              },
+              {
+                "id": "inv_003",
+                "invoice_number": "ISK-2024-003",
+                "date": "2024-08-22",
+                "vendor": "IndiSky",
+                "amount": 156000.0,
+                "currency": "INR",
+                "status": "failed",
+                "failure_reason": "missing_gstin",
+                "gstin_required": true,
+                "gstin_provided": null,
+                "workspace_id": "ws_fintech_001",
+                "created_by": "user_analyst_001",
+                "file_path": "/uploads/invoices/ISK-2024-003.pdf",
+                "payment_terms": "Net 30",
+                "category": "aviation_services"
+              },
+              {
+                "id": "inv_004",
+                "invoice_number": "ISK-2024-004",
+                "date": "2024-08-25",
+                "vendor": "IndiSky",
+                "amount": 98000.0,
+                "currency": "INR",
+                "status": "failed",
+                "failure_reason": "missing_gstin",
+                "gstin_required": true,
+                "gstin_provided": null,
+                "workspace_id": "ws_fintech_001",
+                "created_by": "user_analyst_001",
+                "file_path": "/uploads/invoices/ISK-2024-004.pdf",
+                "payment_terms": "Net 30",
+                "category": "aviation_services"
+              },
+              {
+                "id": "inv_005",
+                "invoice_number": "ISK-2024-005",
+                "date": "2024-08-28",
+                "vendor": "IndiSky",
+                "amount": 112000.0,
+                "currency": "INR",
+                "status": "failed",
+                "failure_reason": "missing_gstin",
+                "gstin_required": true,
+                "gstin_provided": null,
+                "workspace_id": "ws_fintech_001",
+                "created_by": "user_analyst_001",
+                "file_path": "/uploads/invoices/ISK-2024-005.pdf",
+                "payment_terms": "Net 30",
+                "category": "aviation_services"
+              },
+              {
+                "id": "inv_006",
+                "invoice_number": "ISK-2024-006",
+                "date": "2024-08-30",
+                "vendor": "IndiSky",
+                "amount": 143000.0,
+                "currency": "INR",
+                "status": "failed",
+                "failure_reason": "missing_gstin",
+                "gstin_required": true,
+                "gstin_provided": null,
+                "workspace_id": "ws_fintech_001",
+                "created_by": "user_analyst_001",
+                "file_path": "/uploads/invoices/ISK-2024-006.pdf",
+                "payment_terms": "Net 30",
+                "category": "aviation_services"
+              }
+            ],
+            "failure_reasons": {
+              "missing_gstin": 6
+            }
+          }
+        },
+        {
+          "id": "msg_bc71a6dc",
+          "timestamp": "2025-09-14T17:21:45.043328Z",
+          "role": "user",
+          "content": "Why did this fail?"
+        },
+        {
+          "id": "msg_4df6efa5",
+          "timestamp": "2025-09-14T17:21:45.045010Z",
+          "role": "assistant",
+          "content": "All 6 invoices failed because GSTIN (GST Identification Number) is missing from the invoice files. Indian tax law requires GSTIN for B2B transactions above ₹500. The invoices: ISK-2024-001, ISK-2024-002, ISK-2024-003, ISK-2024-004, ISK-2024-005, ISK-2024-006. \n\nWould you like me to create a ticket and notify you when this is fixed?",
+          "actions_performed": [
+            {
+              "action": "analyze_failures",
+              "parameters": {
+                "invoice_ids": [
+                  "inv_001",
+                  "inv_002",
+                  "inv_003",
+                  "inv_004",
+                  "inv_005",
+                  "inv_006"
+                ]
+              },
+              "data_consulted": [
+                "invoices",
+                "compliance_rules",
+                "vendors"
+              ]
+            }
+          ],
+          "data_shown": {
+            "total_invoices": 6,
+            "failure_reasons": {
+              "missing_gstin": 6
+            },
+            "total_amount": 721500.0,
+            "affected_vendors": [
+              "IndiSky"
+            ],
+            "compliance_issues": [
+              {
+                "invoice_id": "inv_001",
+                "issue": "GSTIN required for B2B transactions >₹500",
+                "vendor": "IndiSky",
+                "amount": 125000.0
+              },
+              {
+                "invoice_id": "inv_002",
+                "issue": "GSTIN required for B2B transactions >₹500",
+                "vendor": "IndiSky",
+                "amount": 87500.0
+              },
+              {
+                "invoice_id": "inv_003",
+                "issue": "GSTIN required for B2B transactions >₹500",
+                "vendor": "IndiSky",
+                "amount": 156000.0
+              },
+              {
+                "invoice_id": "inv_004",
+                "issue": "GSTIN required for B2B transactions >₹500",
+                "vendor": "IndiSky",
+                "amount": 98000.0
+              },
+              {
+                "invoice_id": "inv_005",
+                "issue": "GSTIN required for B2B transactions >₹500",
+                "vendor": "IndiSky",
+                "amount": 112000.0
+              },
+              {
+                "invoice_id": "inv_006",
+                "issue": "GSTIN required for B2B transactions >₹500",
+                "vendor": "IndiSky",
+                "amount": 143000.0
+              }
+            ]
+          },
+          "explanation": {
+            "root_cause": "missing_gstin",
+            "affected_files": 6,
+            "compliance_requirement": "GSTIN mandatory for B2B transactions >₹500",
+            "next_steps": "Contact vendor for updated invoices with GSTIN",
+            "suggested_action": "Create support ticket for GSTIN compliance issue"
+          }
+        },
+        {
+          "id": "msg_59816194",
+          "timestamp": "2025-09-14T17:35:08.769362Z",
+          "role": "user",
+          "content": "Create a ticket and notify me when fixed"
+        },
+        {
+          "id": "msg_c732c9b4",
+          "timestamp": "2025-09-14T17:35:08.771292Z",
+          "role": "assistant",
+          "content": "Created support ticket #TKT-2025-613: 'General Support Request'. I'll notify you when the vendor provides updated invoices. Ticket assigned to compliance team.",
+          "actions_performed": [
+            {
+              "action": "create_support_ticket",
+              "parameters": {
+                "title": "General Support Request",
+                "priority": "medium",
+                "affected_invoices": []
+              },
+              "ticket_id": "TKT-2025-613"
+            }
+          ]
+        },
+        {
+          "id": "msg_33b5106f",
+          "timestamp": "2025-09-14T17:35:28.826992Z",
+          "role": "user",
+          "content": "download the fixed report."
+        },
+        {
+          "id": "msg_0a659251",
+          "timestamp": "2025-09-14T17:35:28.828996Z",
+          "role": "assistant",
+          "content": "Generated and downloaded 'Compliance_Report_Sep2025.pdf'. Report shows 0 invoices processed (₹0)  with valid GSTIN.",
+          "actions_performed": [
+            {
+              "action": "generate_report",
+              "parameters": {
+                "report_type": "compliance_status",
+                "date_range": {
+                  "start": "2025-09-01",
+                  "end": "2025-09-14"
+                }
+              },
+              "file_generated": "Compliance_Report_Sep2025.pdf",
+              "data_consulted": [
+                "invoices",
+                "support_tickets",
+                "vendors"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -737,7 +1507,7 @@
       "user_id": "user_manager_001",
       "workspace_id": "ws_fintech_001",
       "started_date": "2025-09-14T16:41:48.476057Z",
-      "last_updated": "2025-09-14T16:43:08.278850Z",
+      "last_updated": "2025-09-14T17:36:09.389514Z",
       "status": "active",
       "messages": [
         {
@@ -1014,6 +1784,569 @@
         {
           "id": "msg_89a2b51c",
           "timestamp": "2025-09-14T16:43:08.278847Z",
+          "role": "assistant",
+          "content": "Generated and downloaded 'Compliance_Report_Sep2025.pdf'. Report shows 0 invoices processed (₹0)  with valid GSTIN.",
+          "actions_performed": [
+            {
+              "action": "generate_report",
+              "parameters": {
+                "report_type": "compliance_status",
+                "date_range": {
+                  "start": "2025-09-01",
+                  "end": "2025-09-14"
+                }
+              },
+              "file_generated": "Compliance_Report_Sep2025.pdf",
+              "data_consulted": [
+                "invoices",
+                "support_tickets",
+                "vendors"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "msg_d9700f00",
+          "timestamp": "2025-09-14T17:25:15.059757Z",
+          "role": "user",
+          "content": "Filter invoices for last month, vendor=IndiSky, status=failed"
+        },
+        {
+          "id": "msg_0c5e95b4",
+          "timestamp": "2025-09-14T17:25:15.062244Z",
+          "role": "assistant",
+          "content": "I found 6 invoices from IndiSky for 2024-08-01 to 2024-08-31 with status 'failed' . Total amount: ₹721,500.00 . All failures are due to missing gstin.",
+          "actions_performed": [
+            {
+              "action": "filter_invoices",
+              "parameters": {
+                "date_range": {
+                  "start": "2024-08-01",
+                  "end": "2024-08-31"
+                },
+                "vendor": "IndiSky",
+                "status": "failed"
+              },
+              "results_count": 6,
+              "data_consulted": [
+                "invoices",
+                "vendors"
+              ]
+            }
+          ],
+          "data_shown": {
+            "invoice_ids": [
+              "inv_001",
+              "inv_002",
+              "inv_003",
+              "inv_004",
+              "inv_005",
+              "inv_006"
+            ],
+            "total_amount": 721500.0,
+            "invoices": [
+              {
+                "id": "inv_001",
+                "invoice_number": "ISK-2024-001",
+                "date": "2024-08-15",
+                "vendor": "IndiSky",
+                "amount": 125000.0,
+                "currency": "INR",
+                "status": "failed",
+                "failure_reason": "missing_gstin",
+                "gstin_required": true,
+                "gstin_provided": null,
+                "workspace_id": "ws_fintech_001",
+                "created_by": "user_analyst_001",
+                "file_path": "/uploads/invoices/ISK-2024-001.pdf",
+                "payment_terms": "Net 30",
+                "category": "aviation_services"
+              },
+              {
+                "id": "inv_002",
+                "invoice_number": "ISK-2024-002",
+                "date": "2024-08-18",
+                "vendor": "IndiSky",
+                "amount": 87500.0,
+                "currency": "INR",
+                "status": "failed",
+                "failure_reason": "missing_gstin",
+                "gstin_required": true,
+                "gstin_provided": null,
+                "workspace_id": "ws_fintech_001",
+                "created_by": "user_analyst_001",
+                "file_path": "/uploads/invoices/ISK-2024-002.pdf",
+                "payment_terms": "Net 30",
+                "category": "aviation_services"
+              },
+              {
+                "id": "inv_003",
+                "invoice_number": "ISK-2024-003",
+                "date": "2024-08-22",
+                "vendor": "IndiSky",
+                "amount": 156000.0,
+                "currency": "INR",
+                "status": "failed",
+                "failure_reason": "missing_gstin",
+                "gstin_required": true,
+                "gstin_provided": null,
+                "workspace_id": "ws_fintech_001",
+                "created_by": "user_analyst_001",
+                "file_path": "/uploads/invoices/ISK-2024-003.pdf",
+                "payment_terms": "Net 30",
+                "category": "aviation_services"
+              },
+              {
+                "id": "inv_004",
+                "invoice_number": "ISK-2024-004",
+                "date": "2024-08-25",
+                "vendor": "IndiSky",
+                "amount": 98000.0,
+                "currency": "INR",
+                "status": "failed",
+                "failure_reason": "missing_gstin",
+                "gstin_required": true,
+                "gstin_provided": null,
+                "workspace_id": "ws_fintech_001",
+                "created_by": "user_analyst_001",
+                "file_path": "/uploads/invoices/ISK-2024-004.pdf",
+                "payment_terms": "Net 30",
+                "category": "aviation_services"
+              },
+              {
+                "id": "inv_005",
+                "invoice_number": "ISK-2024-005",
+                "date": "2024-08-28",
+                "vendor": "IndiSky",
+                "amount": 112000.0,
+                "currency": "INR",
+                "status": "failed",
+                "failure_reason": "missing_gstin",
+                "gstin_required": true,
+                "gstin_provided": null,
+                "workspace_id": "ws_fintech_001",
+                "created_by": "user_analyst_001",
+                "file_path": "/uploads/invoices/ISK-2024-005.pdf",
+                "payment_terms": "Net 30",
+                "category": "aviation_services"
+              },
+              {
+                "id": "inv_006",
+                "invoice_number": "ISK-2024-006",
+                "date": "2024-08-30",
+                "vendor": "IndiSky",
+                "amount": 143000.0,
+                "currency": "INR",
+                "status": "failed",
+                "failure_reason": "missing_gstin",
+                "gstin_required": true,
+                "gstin_provided": null,
+                "workspace_id": "ws_fintech_001",
+                "created_by": "user_analyst_001",
+                "file_path": "/uploads/invoices/ISK-2024-006.pdf",
+                "payment_terms": "Net 30",
+                "category": "aviation_services"
+              }
+            ],
+            "failure_reasons": {
+              "missing_gstin": 6
+            }
+          }
+        },
+        {
+          "id": "msg_cae98ebb",
+          "timestamp": "2025-09-14T17:25:27.532895Z",
+          "role": "user",
+          "content": "Why did this fail?"
+        },
+        {
+          "id": "msg_bc82ded9",
+          "timestamp": "2025-09-14T17:25:27.535561Z",
+          "role": "assistant",
+          "content": "All 6 invoices failed because GSTIN (GST Identification Number) is missing from the invoice files. Indian tax law requires GSTIN for B2B transactions above ₹500. The invoices: ISK-2024-001, ISK-2024-002, ISK-2024-003, ISK-2024-004, ISK-2024-005, ISK-2024-006. \n\nWould you like me to create a ticket and notify you when this is fixed?",
+          "actions_performed": [
+            {
+              "action": "analyze_failures",
+              "parameters": {
+                "invoice_ids": [
+                  "inv_001",
+                  "inv_002",
+                  "inv_003",
+                  "inv_004",
+                  "inv_005",
+                  "inv_006"
+                ]
+              },
+              "data_consulted": [
+                "invoices",
+                "compliance_rules",
+                "vendors"
+              ]
+            }
+          ],
+          "data_shown": {
+            "total_invoices": 6,
+            "failure_reasons": {
+              "missing_gstin": 6
+            },
+            "total_amount": 721500.0,
+            "affected_vendors": [
+              "IndiSky"
+            ],
+            "compliance_issues": [
+              {
+                "invoice_id": "inv_001",
+                "issue": "GSTIN required for B2B transactions >₹500",
+                "vendor": "IndiSky",
+                "amount": 125000.0
+              },
+              {
+                "invoice_id": "inv_002",
+                "issue": "GSTIN required for B2B transactions >₹500",
+                "vendor": "IndiSky",
+                "amount": 87500.0
+              },
+              {
+                "invoice_id": "inv_003",
+                "issue": "GSTIN required for B2B transactions >₹500",
+                "vendor": "IndiSky",
+                "amount": 156000.0
+              },
+              {
+                "invoice_id": "inv_004",
+                "issue": "GSTIN required for B2B transactions >₹500",
+                "vendor": "IndiSky",
+                "amount": 98000.0
+              },
+              {
+                "invoice_id": "inv_005",
+                "issue": "GSTIN required for B2B transactions >₹500",
+                "vendor": "IndiSky",
+                "amount": 112000.0
+              },
+              {
+                "invoice_id": "inv_006",
+                "issue": "GSTIN required for B2B transactions >₹500",
+                "vendor": "IndiSky",
+                "amount": 143000.0
+              }
+            ]
+          },
+          "explanation": {
+            "root_cause": "missing_gstin",
+            "affected_files": 6,
+            "compliance_requirement": "GSTIN mandatory for B2B transactions >₹500",
+            "next_steps": "Contact vendor for updated invoices with GSTIN",
+            "suggested_action": "Create support ticket for GSTIN compliance issue"
+          }
+        },
+        {
+          "id": "msg_920e5bea",
+          "timestamp": "2025-09-14T17:36:09.387904Z",
+          "role": "user",
+          "content": "Create a ticket and notify me when fixed"
+        },
+        {
+          "id": "msg_eb4f1bdd",
+          "timestamp": "2025-09-14T17:36:09.389512Z",
+          "role": "assistant",
+          "content": "Created support ticket #TKT-2025-771: 'General Support Request'. I'll notify you when the vendor provides updated invoices. Ticket assigned to compliance team.",
+          "actions_performed": [
+            {
+              "action": "create_support_ticket",
+              "parameters": {
+                "title": "General Support Request",
+                "priority": "medium",
+                "affected_invoices": []
+              },
+              "ticket_id": "TKT-2025-771"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conv_86a9dce1",
+      "user_id": "user_admin_001",
+      "workspace_id": "ws_fintech_001",
+      "started_date": "2025-09-14T17:28:54.744088Z",
+      "last_updated": "2025-09-14T17:29:46.304735Z",
+      "status": "active",
+      "messages": [
+        {
+          "id": "msg_e6bbe5cd",
+          "timestamp": "2025-09-14T17:28:54.744106Z",
+          "role": "user",
+          "content": "Filter invoices for last month, vendor=IndiSky, status=failed"
+        },
+        {
+          "id": "msg_dc193a3a",
+          "timestamp": "2025-09-14T17:28:54.748237Z",
+          "role": "assistant",
+          "content": "I found 6 invoices from IndiSky for 2024-08-01 to 2024-08-31 with status 'failed' . Total amount: ₹721,500.00 . All failures are due to missing gstin.",
+          "actions_performed": [
+            {
+              "action": "filter_invoices",
+              "parameters": {
+                "date_range": {
+                  "start": "2024-08-01",
+                  "end": "2024-08-31"
+                },
+                "vendor": "IndiSky",
+                "status": "failed"
+              },
+              "results_count": 6,
+              "data_consulted": [
+                "invoices",
+                "vendors"
+              ]
+            }
+          ],
+          "data_shown": {
+            "invoice_ids": [
+              "inv_001",
+              "inv_002",
+              "inv_003",
+              "inv_004",
+              "inv_005",
+              "inv_006"
+            ],
+            "total_amount": 721500.0,
+            "invoices": [
+              {
+                "id": "inv_001",
+                "invoice_number": "ISK-2024-001",
+                "date": "2024-08-15",
+                "vendor": "IndiSky",
+                "amount": 125000.0,
+                "currency": "INR",
+                "status": "failed",
+                "failure_reason": "missing_gstin",
+                "gstin_required": true,
+                "gstin_provided": null,
+                "workspace_id": "ws_fintech_001",
+                "created_by": "user_analyst_001",
+                "file_path": "/uploads/invoices/ISK-2024-001.pdf",
+                "payment_terms": "Net 30",
+                "category": "aviation_services"
+              },
+              {
+                "id": "inv_002",
+                "invoice_number": "ISK-2024-002",
+                "date": "2024-08-18",
+                "vendor": "IndiSky",
+                "amount": 87500.0,
+                "currency": "INR",
+                "status": "failed",
+                "failure_reason": "missing_gstin",
+                "gstin_required": true,
+                "gstin_provided": null,
+                "workspace_id": "ws_fintech_001",
+                "created_by": "user_analyst_001",
+                "file_path": "/uploads/invoices/ISK-2024-002.pdf",
+                "payment_terms": "Net 30",
+                "category": "aviation_services"
+              },
+              {
+                "id": "inv_003",
+                "invoice_number": "ISK-2024-003",
+                "date": "2024-08-22",
+                "vendor": "IndiSky",
+                "amount": 156000.0,
+                "currency": "INR",
+                "status": "failed",
+                "failure_reason": "missing_gstin",
+                "gstin_required": true,
+                "gstin_provided": null,
+                "workspace_id": "ws_fintech_001",
+                "created_by": "user_analyst_001",
+                "file_path": "/uploads/invoices/ISK-2024-003.pdf",
+                "payment_terms": "Net 30",
+                "category": "aviation_services"
+              },
+              {
+                "id": "inv_004",
+                "invoice_number": "ISK-2024-004",
+                "date": "2024-08-25",
+                "vendor": "IndiSky",
+                "amount": 98000.0,
+                "currency": "INR",
+                "status": "failed",
+                "failure_reason": "missing_gstin",
+                "gstin_required": true,
+                "gstin_provided": null,
+                "workspace_id": "ws_fintech_001",
+                "created_by": "user_analyst_001",
+                "file_path": "/uploads/invoices/ISK-2024-004.pdf",
+                "payment_terms": "Net 30",
+                "category": "aviation_services"
+              },
+              {
+                "id": "inv_005",
+                "invoice_number": "ISK-2024-005",
+                "date": "2024-08-28",
+                "vendor": "IndiSky",
+                "amount": 112000.0,
+                "currency": "INR",
+                "status": "failed",
+                "failure_reason": "missing_gstin",
+                "gstin_required": true,
+                "gstin_provided": null,
+                "workspace_id": "ws_fintech_001",
+                "created_by": "user_analyst_001",
+                "file_path": "/uploads/invoices/ISK-2024-005.pdf",
+                "payment_terms": "Net 30",
+                "category": "aviation_services"
+              },
+              {
+                "id": "inv_006",
+                "invoice_number": "ISK-2024-006",
+                "date": "2024-08-30",
+                "vendor": "IndiSky",
+                "amount": 143000.0,
+                "currency": "INR",
+                "status": "failed",
+                "failure_reason": "missing_gstin",
+                "gstin_required": true,
+                "gstin_provided": null,
+                "workspace_id": "ws_fintech_001",
+                "created_by": "user_analyst_001",
+                "file_path": "/uploads/invoices/ISK-2024-006.pdf",
+                "payment_terms": "Net 30",
+                "category": "aviation_services"
+              }
+            ],
+            "failure_reasons": {
+              "missing_gstin": 6
+            }
+          }
+        },
+        {
+          "id": "msg_5e147aac",
+          "timestamp": "2025-09-14T17:29:05.894556Z",
+          "role": "user",
+          "content": "Why did this fail?"
+        },
+        {
+          "id": "msg_f6f954f0",
+          "timestamp": "2025-09-14T17:29:05.897644Z",
+          "role": "assistant",
+          "content": "All 6 invoices failed because GSTIN (GST Identification Number) is missing from the invoice files. Indian tax law requires GSTIN for B2B transactions above ₹500. The invoices: ISK-2024-001, ISK-2024-002, ISK-2024-003, ISK-2024-004, ISK-2024-005, ISK-2024-006. \n\nWould you like me to create a ticket and notify you when this is fixed?",
+          "actions_performed": [
+            {
+              "action": "analyze_failures",
+              "parameters": {
+                "invoice_ids": [
+                  "inv_001",
+                  "inv_002",
+                  "inv_003",
+                  "inv_004",
+                  "inv_005",
+                  "inv_006"
+                ]
+              },
+              "data_consulted": [
+                "invoices",
+                "compliance_rules",
+                "vendors"
+              ]
+            }
+          ],
+          "data_shown": {
+            "total_invoices": 6,
+            "failure_reasons": {
+              "missing_gstin": 6
+            },
+            "total_amount": 721500.0,
+            "affected_vendors": [
+              "IndiSky"
+            ],
+            "compliance_issues": [
+              {
+                "invoice_id": "inv_001",
+                "issue": "GSTIN required for B2B transactions >₹500",
+                "vendor": "IndiSky",
+                "amount": 125000.0
+              },
+              {
+                "invoice_id": "inv_002",
+                "issue": "GSTIN required for B2B transactions >₹500",
+                "vendor": "IndiSky",
+                "amount": 87500.0
+              },
+              {
+                "invoice_id": "inv_003",
+                "issue": "GSTIN required for B2B transactions >₹500",
+                "vendor": "IndiSky",
+                "amount": 156000.0
+              },
+              {
+                "invoice_id": "inv_004",
+                "issue": "GSTIN required for B2B transactions >₹500",
+                "vendor": "IndiSky",
+                "amount": 98000.0
+              },
+              {
+                "invoice_id": "inv_005",
+                "issue": "GSTIN required for B2B transactions >₹500",
+                "vendor": "IndiSky",
+                "amount": 112000.0
+              },
+              {
+                "invoice_id": "inv_006",
+                "issue": "GSTIN required for B2B transactions >₹500",
+                "vendor": "IndiSky",
+                "amount": 143000.0
+              }
+            ]
+          },
+          "explanation": {
+            "root_cause": "missing_gstin",
+            "affected_files": 6,
+            "compliance_requirement": "GSTIN mandatory for B2B transactions >₹500",
+            "next_steps": "Contact vendor for updated invoices with GSTIN",
+            "suggested_action": "Create support ticket for GSTIN compliance issue"
+          }
+        },
+        {
+          "id": "msg_d128a98e",
+          "timestamp": "2025-09-14T17:29:07.772295Z",
+          "role": "user",
+          "content": "Create a ticket and notify me when fixed"
+        },
+        {
+          "id": "msg_d0b752c9",
+          "timestamp": "2025-09-14T17:29:07.773791Z",
+          "role": "assistant",
+          "content": "Created support ticket #TKT-2025-9C2: 'Missing GSTIN in vendor invoices'. I'll notify you when the vendor provides updated invoices. Ticket assigned to compliance team.",
+          "actions_performed": [
+            {
+              "action": "create_support_ticket",
+              "parameters": {
+                "title": "Missing GSTIN in vendor invoices",
+                "priority": "high",
+                "affected_invoices": [
+                  "inv_001",
+                  "inv_002",
+                  "inv_003",
+                  "inv_004",
+                  "inv_005",
+                  "inv_006"
+                ]
+              },
+              "ticket_id": "TKT-2025-9C2"
+            }
+          ]
+        },
+        {
+          "id": "msg_29d69fab",
+          "timestamp": "2025-09-14T17:29:46.302101Z",
+          "role": "user",
+          "content": "download the fixed report"
+        },
+        {
+          "id": "msg_f9fb39c3",
+          "timestamp": "2025-09-14T17:29:46.304732Z",
           "role": "assistant",
           "content": "Generated and downloaded 'Compliance_Report_Sep2025.pdf'. Report shows 0 invoices processed (₹0)  with valid GSTIN.",
           "actions_performed": [

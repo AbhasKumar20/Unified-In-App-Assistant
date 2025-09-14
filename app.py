@@ -303,7 +303,7 @@ def render_chat_interface():
     chat_container = st.container()
     
     with chat_container:
-        for message in st.session_state.chat_history:
+        for msg_index, message in enumerate(st.session_state.chat_history):
             if message['role'] == 'user':
                 st.markdown(f'<div class="chat-message user-message"><strong>You:</strong> {message["content"]}</div>', 
                            unsafe_allow_html=True)
@@ -321,7 +321,7 @@ def render_chat_interface():
                 
                 # Show suggested action buttons
                 if 'explanation' in message and message['explanation'].get('suggested_action'):
-                    render_suggested_actions(message['explanation'])
+                    render_suggested_actions(message['explanation'], msg_index)
     
     # Handle pending action from button click
     if 'pending_action' in st.session_state and st.session_state.pending_action:
@@ -478,17 +478,18 @@ def render_actions_performed(actions: List[Dict]):
         with st.expander(f"Action: {action.get('action', 'Unknown')}", expanded=False):
             st.json(action)
 
-def render_suggested_actions(explanation: Dict):
+def render_suggested_actions(explanation: Dict, msg_index: int = 0):
     """Render suggested action buttons"""
     if explanation.get('suggested_action') == 'Create support ticket for GSTIN compliance issue':
         st.subheader("✨ Suggested Action")
         
         col1, col2 = st.columns([1, 3])
         with col1:
-            # Create unique key using hash of explanation content to avoid duplicates
-            # This ensures the same explanation always gets the same key, but different explanations get different keys
-            explanation_hash = abs(hash(str(explanation))) % 10000
-            unique_key = f"create_ticket_{explanation.get('root_cause', '')}_{explanation_hash}"
+            # Create unique key using message index to avoid duplicates across chat history
+            root_cause = explanation.get('root_cause', 'unknown')
+            
+            # Use message index to make each button unique, even if explanation is the same
+            unique_key = f"create_ticket_btn_{root_cause}_{msg_index}"
             
             if st.button("🎟️ Create Ticket & Notify", type="primary", key=unique_key):
                 # Simulate user input for ticket creation
