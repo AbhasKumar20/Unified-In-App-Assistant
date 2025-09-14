@@ -2,6 +2,14 @@
 
 A powerful **Streamlit-based financial assistant** that provides unified invoice processing, failure analysis, and support ticket management for financial operations teams.
 
+## 🎬 **Demo Video**
+
+**[📹 Watch Technical Demo & Solution Walkthrough](https://drive.google.com/file/d/1mQXTzIIYys5aNdqP3wqTE65hLRvU7aR9/view?usp=drive_link)**
+
+*See the complete technical approach, implementation details, and live demonstration of all features.*
+
+---
+
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://unified-in-app.streamlit.app/)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
