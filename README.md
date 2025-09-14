@@ -33,6 +33,70 @@ A powerful **Streamlit-based financial assistant** that provides unified invoice
 - Workspace-based data isolation
 - Action-based permission system
 
+## 📸 **Screenshots & UI Walkthrough**
+
+### 🏠 **Main Dashboard**
+*The main interface showing the chat-based interaction with role switching*
+
+![Main Dashboard](screenshots/main-dashboard.png)
+
+### 💬 **Natural Language Processing**
+*Ask questions in plain English and get instant responses*
+
+![Natural Language Query](screenshots/natural-language-query.png)
+
+**Example interactions:**
+- "Filter invoices for last month, vendor=IndiSky, status=failed"
+- "Why did this fail?"
+- "Create a ticket and notify me when fixed"
+
+### 📊 **Invoice Analysis & Visualization**
+*Interactive charts and detailed invoice breakdowns*
+
+![Invoice Analysis](screenshots/invoice-analysis.png)
+
+### 🚨 **Failure Analysis System**
+*Automatic detection and categorization of invoice issues*
+
+![Failure Analysis](screenshots/failure-analysis.png)
+
+### ✨ **Smart Suggested Actions**
+*One-click ticket creation with contextual suggestions*
+
+![Suggested Actions](screenshots/suggested-actions.png)
+
+### 🎟️ **Support Ticket Management**
+*Integrated ticket creation and tracking system*
+
+![Ticket Creation](screenshots/ticket-creation.png)
+
+### 🔐 **Role-Based Access Control**
+*Different interfaces for Financial Analysts, Managers, and Viewers*
+
+![Role Management](screenshots/role-management.png)
+
+### 📋 **Context Pane**
+*View conversation history, open tickets, and quick statistics*
+
+![Context Pane](screenshots/context-pane.png)
+
+### 🔍 **Trace Viewer**
+*Debug and audit trail showing exactly what actions were performed*
+
+![Trace Viewer](screenshots/trace-viewer.png)
+
+### 📈 **Analytics Dashboard**
+*Real-time metrics and performance indicators*
+
+![Analytics Dashboard](screenshots/analytics-dashboard.png)
+
+### 🔄 **Conversation Continuity**
+*Sessions persist across visits with full context retention*
+
+![Conversation Continuity](screenshots/conversation-continuity.png)
+
+---
+
 ## 🚀 Quick Start
 
 ### Prerequisites
@@ -159,6 +223,27 @@ We welcome contributions! Please see our contributing guidelines:
 3. Commit your changes (`git commit -m 'Add amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
+
+### 📸 **Adding Screenshots**
+
+To update or add screenshots:
+
+1. **Create screenshots directory**: `mkdir screenshots` (if it doesn't exist)
+2. **Run the application**: `streamlit run app.py`
+3. **Capture screenshots** of key functionalities:
+   - Use consistent browser window size (1920x1080 recommended)
+   - Include both light and dark mode if applicable
+   - Show realistic data and interactions
+   - Crop to focus on relevant UI elements
+4. **Save as PNG** with descriptive names matching the README references
+5. **Optimize file sizes** to keep repository lightweight
+
+### 🎯 **Screenshot Guidelines**
+- **Resolution**: 1920x1080 or consistent aspect ratio
+- **Format**: PNG for UI screenshots, JPG for photos
+- **Naming**: Use kebab-case matching README references
+- **Size**: Optimize to <500KB per image when possible
+- **Content**: Show realistic, meaningful data examples
 
 ## 📄 License
 
