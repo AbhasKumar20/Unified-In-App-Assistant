@@ -1,0 +1,178 @@
+{
+  "vendors": [
+    {
+      "id": "vendor_001",
+      "name": "IndiSky",
+      "gstin": "27AABCI9999B1ZS",
+      "contact_email": "billing@indisky.com",
+      "category": "aviation_services",
+      "payment_terms": "Net 30",
+      "workspace_id": "ws_fintech_001",
+      "status": "active",
+      "country": "India",
+      "compliance_issues": [
+        {
+          "issue": "GSTIN not provided in initial invoices",
+          "resolved": true,
+          "resolved_date": "2024-09-12"
+        }
+      ]
+    },
+    {
+      "id": "vendor_002",
+      "name": "Amazon Web Services",
+      "gstin": null,
+      "contact_email": "billing@aws.amazon.com",
+      "category": "cloud_services",
+      "payment_terms": "Net 15",
+      "workspace_id": "ws_fintech_001",
+      "status": "active",
+      "country": "USA",
+      "compliance_issues": []
+    },
+    {
+      "id": "vendor_003",
+      "name": "Microsoft Corporation",
+      "gstin": null,
+      "contact_email": "billing@microsoft.com",
+      "category": "software_licenses",
+      "payment_terms": "Net 30",
+      "workspace_id": "ws_fintech_001",
+      "status": "active",
+      "country": "USA",
+      "compliance_issues": []
+    },
+    {
+      "id": "vendor_004",
+      "name": "Reliance Industries",
+      "gstin": "27AABCR5055K1ZX",
+      "contact_email": "procurement@ril.com",
+      "category": "industrial_supplies",
+      "payment_terms": "Net 45",
+      "workspace_id": "ws_fintech_001",
+      "status": "active",
+      "country": "India",
+      "compliance_issues": [
+        {
+          "issue": "Invalid amount calculation in invoice REL-2024-156",
+          "resolved": false,
+          "created_date": "2024-08-25"
+        }
+      ]
+    },
+    {
+      "id": "vendor_005",
+      "name": "Wipro Limited",
+      "gstin": "29AABCW3775F1ZS",
+      "contact_email": "finance@wipro.com",
+      "category": "it_consulting",
+      "payment_terms": "Net 30",
+      "workspace_id": "ws_fintech_001",
+      "status": "active",
+      "country": "India",
+      "compliance_issues": []
+    },
+    {
+      "id": "vendor_006",
+      "name": "Uber Technologies",
+      "gstin": "27AABCU9603R1ZX",
+      "contact_email": "billing@uber.com",
+      "category": "transportation",
+      "payment_terms": "Net 7",
+      "workspace_id": "ws_fintech_001",
+      "status": "active",
+      "country": "India",
+      "compliance_issues": [
+        {
+          "issue": "Duplicate invoice submission",
+          "resolved": false,
+          "created_date": "2024-09-02"
+        }
+      ]
+    },
+    {
+      "id": "vendor_007",
+      "name": "Zomato Limited",
+      "gstin": "09AABCZ1234M1Z8",
+      "contact_email": "accounts@zomato.com",
+      "category": "food_services",
+      "payment_terms": "Net 15",
+      "workspace_id": "ws_fintech_001",
+      "status": "active",
+      "country": "India",
+      "compliance_issues": []
+    },
+    {
+      "id": "vendor_008",
+      "name": "BYJU'S",
+      "gstin": "29AABCB1234L1ZY",
+      "contact_email": "billing@byjus.com",
+      "category": "education_services",
+      "payment_terms": "Net 30",
+      "workspace_id": "ws_fintech_001",
+      "status": "active",
+      "country": "India",
+      "compliance_issues": [
+        {
+          "issue": "Purchase order expired for invoice BYJU-2024-445",
+          "resolved": false,
+          "created_date": "2024-09-08"
+        }
+      ]
+    },
+    {
+      "id": "vendor_009",
+      "name": "Paytm",
+      "gstin": "09AABCP9999P1ZS",
+      "contact_email": "finance@paytm.com",
+      "category": "fintech_services",
+      "payment_terms": "Net 15",
+      "workspace_id": "ws_fintech_001",
+      "status": "active",
+      "country": "India",
+      "compliance_issues": []
+    },
+    {
+      "id": "vendor_010",
+      "name": "Flipkart",
+      "gstin": "29AABCF1234N1Z3",
+      "contact_email": "vendor.payments@flipkart.com",
+      "category": "e_commerce",
+      "payment_terms": "Net 30",
+      "workspace_id": "ws_fintech_001",
+      "status": "active",
+      "country": "India",
+      "compliance_issues": []
+    },
+    {
+      "id": "vendor_011",
+      "name": "Ola Electric",
+      "gstin": "36AABCO1234E1Z4",
+      "contact_email": "procurement@olaelectric.com",
+      "category": "automotive",
+      "payment_terms": "Net 45",
+      "workspace_id": "ws_fintech_001",
+      "status": "active",
+      "country": "India",
+      "compliance_issues": []
+    },
+    {
+      "id": "vendor_012",
+      "name": "Bharti Airtel",
+      "gstin": "09AABCA1234A1Z1",
+      "contact_email": "enterprise.billing@airtel.com",
+      "category": "telecommunications",
+      "payment_terms": "Net 30",
+      "workspace_id": "ws_fintech_001",
+      "status": "active",
+      "country": "India",
+      "compliance_issues": [
+        {
+          "issue": "Missing supporting documentation",
+          "resolved": false,
+          "created_date": "2024-09-15"
+        }
+      ]
+    }
+  ]
+}

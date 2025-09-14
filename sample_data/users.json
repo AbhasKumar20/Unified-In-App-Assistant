@@ -1,0 +1,76 @@
+{
+  "users": [
+    {
+      "id": "user_analyst_001",
+      "name": "Priya Sharma",
+      "email": "priya.sharma@finkraft.com", 
+      "role": "financial_analyst",
+      "workspace_id": "ws_fintech_001",
+      "permissions": {
+        "can_view_invoices": true,
+        "can_filter_data": true,
+        "can_download_reports": true,
+        "can_create_support_tickets": true,
+        "can_view_all_vendors": true,
+        "can_view_compliance_issues": true,
+        "can_process_payments": false,
+        "can_manage_users": false
+      },
+      "last_login": "2024-09-13T09:15:00Z"
+    },
+    {
+      "id": "user_manager_001",
+      "name": "Rajesh Kumar",
+      "email": "rajesh.kumar@finkraft.com",
+      "role": "finance_manager", 
+      "workspace_id": "ws_fintech_001",
+      "permissions": {
+        "can_view_invoices": true,
+        "can_filter_data": true,
+        "can_download_reports": true,
+        "can_create_support_tickets": true,
+        "can_view_all_vendors": true,
+        "can_view_compliance_issues": true,
+        "can_process_payments": true,
+        "can_manage_users": false
+      },
+      "last_login": "2024-09-13T08:30:00Z"
+    },
+    {
+      "id": "user_admin_001",
+      "name": "Amit Patel",
+      "email": "amit.patel@finkraft.com",
+      "role": "system_admin",
+      "workspace_id": "ws_fintech_001",
+      "permissions": {
+        "can_view_invoices": true,
+        "can_filter_data": true,
+        "can_download_reports": true,
+        "can_create_support_tickets": true,
+        "can_view_all_vendors": true,
+        "can_view_compliance_issues": true,
+        "can_process_payments": true,
+        "can_manage_users": true
+      },
+      "last_login": "2024-09-13T07:45:00Z"
+    },
+    {
+      "id": "user_viewer_001",
+      "name": "Sneha Gupta",
+      "email": "sneha.gupta@finkraft.com",
+      "role": "report_viewer",
+      "workspace_id": "ws_fintech_001",
+      "permissions": {
+        "can_view_invoices": true,
+        "can_filter_data": false,
+        "can_download_reports": false,
+        "can_create_support_tickets": true,
+        "can_view_all_vendors": false,
+        "can_view_compliance_issues": false,
+        "can_process_payments": false,
+        "can_manage_users": false
+      },
+      "last_login": "2024-09-12T16:20:00Z"
+    }
+  ]
+}

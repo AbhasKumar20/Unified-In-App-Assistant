@@ -1,0 +1,138 @@
+{
+  "allowed_actions": {
+    "financial_analyst": [
+      {
+        "action": "filter_invoices",
+        "description": "Filter invoices by date, vendor, status, amount",
+        "parameters": ["date_range", "vendor", "status", "amount_range", "category"],
+        "data_access": ["invoices", "vendors"]
+      },
+      {
+        "action": "analyze_failures", 
+        "description": "Analyze why transactions or invoices failed",
+        "parameters": ["invoice_ids", "transaction_ids"],
+        "data_access": ["invoices", "transactions", "compliance_rules", "vendors"]
+      },
+      {
+        "action": "generate_report",
+        "description": "Generate compliance, vendor, or financial reports",
+        "parameters": ["report_type", "date_range", "vendor", "filters"],
+        "data_access": ["invoices", "transactions", "vendors", "support_tickets"]
+      },
+      {
+        "action": "create_support_ticket",
+        "description": "Create support tickets for issues",
+        "parameters": ["title", "description", "priority", "affected_items"],
+        "data_access": ["support_tickets"]
+      },
+      {
+        "action": "view_ticket_status",
+        "description": "Check status of support tickets",
+        "parameters": ["ticket_id", "status", "created_by"],
+        "data_access": ["support_tickets"]
+      }
+    ],
+    "finance_manager": [
+      {
+        "action": "filter_invoices",
+        "description": "Filter invoices by date, vendor, status, amount", 
+        "parameters": ["date_range", "vendor", "status", "amount_range", "category"],
+        "data_access": ["invoices", "vendors"]
+      },
+      {
+        "action": "analyze_failures",
+        "description": "Analyze why transactions or invoices failed",
+        "parameters": ["invoice_ids", "transaction_ids"],
+        "data_access": ["invoices", "transactions", "compliance_rules", "vendors"]
+      },
+      {
+        "action": "generate_report",
+        "description": "Generate compliance, vendor, or financial reports",
+        "parameters": ["report_type", "date_range", "vendor", "filters"],
+        "data_access": ["invoices", "transactions", "vendors", "support_tickets", "accounts"]
+      },
+      {
+        "action": "create_support_ticket",
+        "description": "Create support tickets for issues",
+        "parameters": ["title", "description", "priority", "affected_items"],
+        "data_access": ["support_tickets"]
+      },
+      {
+        "action": "process_payment",
+        "description": "Approve and process payments for valid invoices",
+        "parameters": ["invoice_id", "payment_method", "approval_notes"],
+        "data_access": ["invoices", "accounts", "vendors"]
+      },
+      {
+        "action": "view_financial_summary",
+        "description": "View high-level financial metrics and KPIs", 
+        "parameters": ["date_range", "metric_type"],
+        "data_access": ["invoices", "transactions", "accounts", "reports"]
+      }
+    ],
+    "system_admin": [
+      {
+        "action": "filter_invoices",
+        "description": "Filter invoices by date, vendor, status, amount",
+        "parameters": ["date_range", "vendor", "status", "amount_range", "category"],
+        "data_access": ["invoices", "vendors"]
+      },
+      {
+        "action": "analyze_failures",
+        "description": "Analyze why transactions or invoices failed",
+        "parameters": ["invoice_ids", "transaction_ids"],
+        "data_access": ["invoices", "transactions", "compliance_rules", "vendors"]
+      },
+      {
+        "action": "generate_report",
+        "description": "Generate any type of report including system reports",
+        "parameters": ["report_type", "date_range", "vendor", "filters", "include_sensitive"],
+        "data_access": ["invoices", "transactions", "vendors", "support_tickets", "accounts", "users", "system_logs"]
+      },
+      {
+        "action": "create_support_ticket",
+        "description": "Create support tickets for issues",
+        "parameters": ["title", "description", "priority", "affected_items"],
+        "data_access": ["support_tickets"]
+      },
+      {
+        "action": "process_payment",
+        "description": "Approve and process payments for valid invoices",
+        "parameters": ["invoice_id", "payment_method", "approval_notes"],
+        "data_access": ["invoices", "accounts", "vendors"]
+      },
+      {
+        "action": "manage_users",
+        "description": "Create, update, or deactivate user accounts",
+        "parameters": ["user_id", "action", "role", "permissions"],
+        "data_access": ["users", "workspaces"]
+      },
+      {
+        "action": "system_diagnostics", 
+        "description": "Run system health checks and diagnostics",
+        "parameters": ["diagnostic_type", "component"],
+        "data_access": ["system_logs", "performance_metrics"]
+      }
+    ],
+    "report_viewer": [
+      {
+        "action": "view_invoices",
+        "description": "View invoice details (limited access)",
+        "parameters": ["invoice_id", "date_range"],
+        "data_access": ["invoices"]
+      },
+      {
+        "action": "create_support_ticket",
+        "description": "Create support tickets for issues",
+        "parameters": ["title", "description", "priority"],
+        "data_access": ["support_tickets"]
+      },
+      {
+        "action": "view_ticket_status",
+        "description": "Check status of own support tickets only",
+        "parameters": ["ticket_id", "created_by_self"],
+        "data_access": ["support_tickets"]
+      }
+    ]
+  }
+}

@@ -1,0 +1,331 @@
+{
+  "support_tickets": [
+    {
+      "id": "TKT-2024-001",
+      "title": "Missing GSTIN in IndiSky invoices",
+      "description": "7 invoices from IndiSky (Aug 2024) failed processing due to missing GSTIN. Total amount affected: ₹1,110,500. Requires vendor to provide GSTIN and resubmit invoices.",
+      "status": "resolved",
+      "priority": "high",
+      "created_by": "user_analyst_001",
+      "assigned_to": "compliance_team",
+      "created_date": "2024-09-10T14:35:05Z",
+      "resolved_date": "2024-09-12T16:30:00Z",
+      "workspace_id": "ws_fintech_001",
+      "affected_invoices": [
+        "inv_001",
+        "inv_002",
+        "inv_003",
+        "inv_004",
+        "inv_005",
+        "inv_006",
+        "inv_007"
+      ],
+      "resolution": {
+        "summary": "IndiSky provided GSTIN: 27AABCI9999B1ZS. First invoice corrected and processed. Remaining 6 invoices pending vendor resubmission.",
+        "actions_taken": [
+          "Contacted IndiSky billing team",
+          "Received GSTIN documentation",
+          "Updated vendor profile",
+          "Processed corrected invoice ISK-2024-001-FIXED"
+        ],
+        "next_steps": "Waiting for remaining 6 corrected invoices from vendor"
+      },
+      "updates": [
+        {
+          "timestamp": "2024-09-10T14:35:05Z",
+          "status": "open",
+          "note": "Ticket created automatically by assistant",
+          "updated_by": "system"
+        },
+        {
+          "timestamp": "2024-09-11T10:15:00Z",
+          "status": "in_progress",
+          "note": "Contacted IndiSky for GSTIN details",
+          "updated_by": "compliance_team"
+        },
+        {
+          "timestamp": "2024-09-12T14:20:00Z",
+          "status": "in_progress",
+          "note": "Received GSTIN from IndiSky: 27AABCI9999B1ZS",
+          "updated_by": "compliance_team"
+        },
+        {
+          "timestamp": "2024-09-12T16:30:00Z",
+          "status": "resolved",
+          "note": "First corrected invoice processed. Updated vendor profile with GSTIN.",
+          "updated_by": "compliance_team"
+        }
+      ],
+      "conversation_id": "conv_001"
+    },
+    {
+      "id": "TKT-2024-002",
+      "title": "Slow report generation for large datasets",
+      "description": "Monthly P&L report taking >5 minutes to generate when filtering by multiple vendors",
+      "status": "open",
+      "priority": "medium",
+      "created_by": "user_manager_001",
+      "assigned_to": "tech_support",
+      "created_date": "2024-09-12T11:20:00Z",
+      "resolved_date": null,
+      "workspace_id": "ws_fintech_001",
+      "affected_invoices": [],
+      "resolution": null,
+      "updates": [
+        {
+          "timestamp": "2024-09-12T11:20:00Z",
+          "status": "open",
+          "note": "Report generation timeout issue reported",
+          "updated_by": "user_manager_001"
+        },
+        {
+          "timestamp": "2024-09-13T08:45:00Z",
+          "status": "in_progress",
+          "note": "Investigating database query optimization",
+          "updated_by": "tech_support"
+        }
+      ],
+      "conversation_id": null
+    },
+    {
+      "id": "TKT-2025-B18",
+      "title": "Missing GSTIN in vendor invoices",
+      "description": "7 invoices from IndiSky failed processing due to missing GSTIN. Total amount affected: ₹910,500.00. Requires vendor to provide GSTIN and resubmit invoices.",
+      "status": "open",
+      "priority": "high",
+      "created_by": "user_analyst_001",
+      "assigned_to": "compliance_team",
+      "created_date": "2025-09-14T13:41:49.071027Z",
+      "resolved_date": null,
+      "workspace_id": "ws_fintech_001",
+      "affected_invoices": [
+        "inv_001",
+        "inv_002",
+        "inv_003",
+        "inv_004",
+        "inv_005",
+        "inv_006",
+        "inv_007"
+      ],
+      "resolution": null,
+      "updates": [
+        {
+          "timestamp": "2025-09-14T13:41:49.071030Z",
+          "status": "open",
+          "note": "Ticket created automatically by assistant",
+          "updated_by": "system"
+        }
+      ],
+      "conversation_id": null
+    },
+    {
+      "id": "TKT-2025-E3B",
+      "title": "Missing GSTIN in vendor invoices",
+      "description": "7 invoices from IndiSky failed processing due to missing GSTIN. Total amount affected: ₹910,500.00. Requires vendor to provide GSTIN and resubmit invoices.",
+      "status": "open",
+      "priority": "high",
+      "created_by": "user_analyst_001",
+      "assigned_to": "compliance_team",
+      "created_date": "2025-09-14T13:53:45.228633Z",
+      "resolved_date": null,
+      "workspace_id": "ws_fintech_001",
+      "affected_invoices": [
+        "inv_001",
+        "inv_002",
+        "inv_003",
+        "inv_004",
+        "inv_005",
+        "inv_006",
+        "inv_007"
+      ],
+      "resolution": null,
+      "updates": [
+        {
+          "timestamp": "2025-09-14T13:53:45.228637Z",
+          "status": "open",
+          "note": "Ticket created automatically by assistant",
+          "updated_by": "system"
+        }
+      ],
+      "conversation_id": null
+    },
+    {
+      "id": "TKT-2025-D48",
+      "title": "Missing GSTIN in vendor invoices",
+      "description": "7 invoices from IndiSky failed processing due to missing GSTIN. Total amount affected: ₹910,500.00. Requires vendor to provide GSTIN and resubmit invoices.",
+      "status": "open",
+      "priority": "high",
+      "created_by": "user_analyst_001",
+      "assigned_to": "compliance_team",
+      "created_date": "2025-09-14T14:15:34.787758Z",
+      "resolved_date": null,
+      "workspace_id": "ws_fintech_001",
+      "affected_invoices": [
+        "inv_001",
+        "inv_002",
+        "inv_003",
+        "inv_004",
+        "inv_005",
+        "inv_006",
+        "inv_007"
+      ],
+      "resolution": null,
+      "updates": [
+        {
+          "timestamp": "2025-09-14T14:15:34.787761Z",
+          "status": "open",
+          "note": "Ticket created automatically by assistant",
+          "updated_by": "system"
+        }
+      ],
+      "conversation_id": null
+    },
+    {
+      "id": "TKT-2025-D54",
+      "title": "Missing GSTIN in vendor invoices",
+      "description": "7 invoices from IndiSky failed processing due to missing GSTIN. Total amount affected: ₹910,500.00. Requires vendor to provide GSTIN and resubmit invoices.",
+      "status": "open",
+      "priority": "high",
+      "created_by": "user_analyst_001",
+      "assigned_to": "compliance_team",
+      "created_date": "2025-09-14T14:16:36.775897Z",
+      "resolved_date": null,
+      "workspace_id": "ws_fintech_001",
+      "affected_invoices": [
+        "inv_001",
+        "inv_002",
+        "inv_003",
+        "inv_004",
+        "inv_005",
+        "inv_006",
+        "inv_007"
+      ],
+      "resolution": null,
+      "updates": [
+        {
+          "timestamp": "2025-09-14T14:16:36.775900Z",
+          "status": "open",
+          "note": "Ticket created automatically by assistant",
+          "updated_by": "system"
+        }
+      ],
+      "conversation_id": null
+    },
+    {
+      "id": "TKT-2025-13A",
+      "title": "Missing GSTIN in vendor invoices",
+      "description": "2 invoices from IndiSky failed processing due to missing GSTIN. Total amount affected: ₹359,000.00. Requires vendor to provide GSTIN and resubmit invoices.",
+      "status": "open",
+      "priority": "high",
+      "created_by": "user_analyst_001",
+      "assigned_to": "compliance_team",
+      "created_date": "2025-09-14T14:33:22.243052Z",
+      "resolved_date": null,
+      "workspace_id": "ws_fintech_001",
+      "affected_invoices": [
+        "inv_001",
+        "inv_012"
+      ],
+      "resolution": null,
+      "updates": [
+        {
+          "timestamp": "2025-09-14T14:33:22.243055Z",
+          "status": "open",
+          "note": "Ticket created automatically by assistant",
+          "updated_by": "system"
+        }
+      ],
+      "conversation_id": null
+    },
+    {
+      "id": "TKT-2025-2D2",
+      "title": "Missing GSTIN in vendor invoices",
+      "description": "6 invoices from IndiSky failed processing due to missing GSTIN. Total amount affected: ₹721,500.00. Requires vendor to provide GSTIN and resubmit invoices.",
+      "status": "open",
+      "priority": "high",
+      "created_by": "user_analyst_001",
+      "assigned_to": "compliance_team",
+      "created_date": "2025-09-14T16:23:49.864622Z",
+      "resolved_date": null,
+      "workspace_id": "ws_fintech_001",
+      "affected_invoices": [
+        "inv_001",
+        "inv_002",
+        "inv_003",
+        "inv_004",
+        "inv_005",
+        "inv_006"
+      ],
+      "resolution": null,
+      "updates": [
+        {
+          "timestamp": "2025-09-14T16:23:49.864625Z",
+          "status": "open",
+          "note": "Ticket created automatically by assistant",
+          "updated_by": "system"
+        }
+      ],
+      "conversation_id": null
+    },
+    {
+      "id": "TKT-2025-7B6",
+      "title": "Missing GSTIN in vendor invoices",
+      "description": "6 invoices from IndiSky failed processing due to missing GSTIN. Total amount affected: ₹721,500.00. Requires vendor to provide GSTIN and resubmit invoices.",
+      "status": "open",
+      "priority": "high",
+      "created_by": "user_analyst_001",
+      "assigned_to": "compliance_team",
+      "created_date": "2025-09-14T16:37:33.893903Z",
+      "resolved_date": null,
+      "workspace_id": "ws_fintech_001",
+      "affected_invoices": [
+        "inv_001",
+        "inv_002",
+        "inv_003",
+        "inv_004",
+        "inv_005",
+        "inv_006"
+      ],
+      "resolution": null,
+      "updates": [
+        {
+          "timestamp": "2025-09-14T16:37:33.893906Z",
+          "status": "open",
+          "note": "Ticket created automatically by assistant",
+          "updated_by": "system"
+        }
+      ],
+      "conversation_id": null
+    },
+    {
+      "id": "TKT-2025-8C4",
+      "title": "Missing GSTIN in vendor invoices",
+      "description": "6 invoices from IndiSky failed processing due to missing GSTIN. Total amount affected: ₹721,500.00. Requires vendor to provide GSTIN and resubmit invoices.",
+      "status": "open",
+      "priority": "high",
+      "created_by": "user_manager_001",
+      "assigned_to": "compliance_team",
+      "created_date": "2025-09-14T16:42:25.293372Z",
+      "resolved_date": null,
+      "workspace_id": "ws_fintech_001",
+      "affected_invoices": [
+        "inv_001",
+        "inv_002",
+        "inv_003",
+        "inv_004",
+        "inv_005",
+        "inv_006"
+      ],
+      "resolution": null,
+      "updates": [
+        {
+          "timestamp": "2025-09-14T16:42:25.293376Z",
+          "status": "open",
+          "note": "Ticket created automatically by assistant",
+          "updated_by": "system"
+        }
+      ],
+      "conversation_id": null
+    }
+  ]
+}

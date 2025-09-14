@@ -1,0 +1,74 @@
+{
+  "reports": [
+    {
+      "id": "rpt_001",
+      "name": "IndiSky_Compliance_Report_Sept2024.pdf",
+      "type": "compliance_status",
+      "generated_date": "2024-09-13T09:17:10Z",
+      "generated_by": "user_analyst_001",
+      "workspace_id": "ws_fintech_001",
+      "parameters": {
+        "vendor": "IndiSky",
+        "date_range": {"start": "2024-09-01", "end": "2024-09-13"},
+        "report_type": "compliance_status"
+      },
+      "summary": {
+        "total_invoices": 8,
+        "processed_invoices": 1,
+        "failed_invoices": 7,
+        "total_amount": 1235500.00,
+        "processed_amount": 125000.00,
+        "compliance_rate": 12.5
+      },
+      "file_path": "/reports/IndiSky_Compliance_Report_Sept2024.pdf",
+      "access_level": "workspace",
+      "data_sources": ["invoices", "support_tickets", "vendors"]
+    },
+    {
+      "id": "rpt_002",
+      "name": "Monthly_P&L_August_2024.pdf", 
+      "type": "profit_loss",
+      "generated_date": "2024-09-01T10:00:00Z",
+      "generated_by": "user_manager_001",
+      "workspace_id": "ws_fintech_001",
+      "parameters": {
+        "date_range": {"start": "2024-08-01", "end": "2024-08-31"},
+        "report_type": "profit_loss",
+        "include_failed_transactions": false
+      },
+      "summary": {
+        "total_revenue": 2450000.00,
+        "total_expenses": 1875000.00,
+        "net_profit": 575000.00,
+        "processed_invoices": 45,
+        "failed_invoices": 7
+      },
+      "file_path": "/reports/Monthly_P&L_August_2024.pdf",
+      "access_level": "manager_and_above",
+      "data_sources": ["invoices", "transactions", "accounts"]
+    },
+    {
+      "id": "rpt_003",
+      "name": "Vendor_Performance_Q3_2024.pdf",
+      "type": "vendor_analysis",
+      "generated_date": "2024-09-05T15:30:00Z", 
+      "generated_by": "user_analyst_001",
+      "workspace_id": "ws_fintech_001",
+      "parameters": {
+        "date_range": {"start": "2024-07-01", "end": "2024-09-30"},
+        "report_type": "vendor_analysis",
+        "include_compliance_issues": true
+      },
+      "summary": {
+        "total_vendors": 15,
+        "compliant_vendors": 13,
+        "vendors_with_issues": 2,
+        "total_transactions": 156,
+        "average_processing_time": "2.3 days"
+      },
+      "file_path": "/reports/Vendor_Performance_Q3_2024.pdf",
+      "access_level": "workspace",
+      "data_sources": ["vendors", "invoices", "support_tickets"]
+    }
+  ]
+}
