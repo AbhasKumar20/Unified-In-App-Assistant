@@ -38,12 +38,15 @@ A powerful **Streamlit-based financial assistant** that provides unified invoice
 ### 🏠 **Main Dashboard**
 *The main interface showing the chat-based interaction with role switching*
 
-![Main Dashboard](screenshots/main-dashboard.png)
+<img width="3440" height="1972" alt="image" src="https://github.com/user-attachments/assets/45496615-49e6-492a-8af2-41498496e32b" />
+
 
 ### 💬 **Natural Language Processing**
 *Ask questions in plain English and get instant responses*
 
-![Natural Language Query](screenshots/natural-language-query.png)
+
+<img width="3442" height="1972" alt="image" src="https://github.com/user-attachments/assets/46259236-8a58-4b01-b8a2-e656d287ac02" />
+
 
 **Example interactions:**
 - "Filter invoices for last month, vendor=IndiSky, status=failed"
@@ -53,47 +56,67 @@ A powerful **Streamlit-based financial assistant** that provides unified invoice
 ### 📊 **Invoice Analysis & Visualization**
 *Interactive charts and detailed invoice breakdowns*
 
-![Invoice Analysis](screenshots/invoice-analysis.png)
+
+<img width="3440" height="1492" alt="image" src="https://github.com/user-attachments/assets/322dfa70-bbed-487a-bf07-cbefad539617" />
+
 
 ### 🚨 **Failure Analysis System**
 *Automatic detection and categorization of invoice issues*
 
-![Failure Analysis](screenshots/failure-analysis.png)
+
+<img width="3442" height="1896" alt="image" src="https://github.com/user-attachments/assets/37fd4823-151e-4ac5-af6d-2b9f6fdfdfcb" />
+
 
 ### ✨ **Smart Suggested Actions**
 *One-click ticket creation with contextual suggestions*
 
-![Suggested Actions](screenshots/suggested-actions.png)
+
+<img width="3444" height="1210" alt="image" src="https://github.com/user-attachments/assets/bcb9f01b-5fce-4c72-9bae-60b630320d23" />
+
 
 ### 🎟️ **Support Ticket Management**
 *Integrated ticket creation and tracking system*
 
-![Ticket Creation](screenshots/ticket-creation.png)
+
+<img width="3450" height="738" alt="image" src="https://github.com/user-attachments/assets/9a151b09-b805-4106-9533-d0267b29ca10" />
+
 
 ### 🔐 **Role-Based Access Control**
 *Different interfaces for Financial Analysts, Managers, and Viewers*
 
-![Role Management](screenshots/role-management.png)
+
+<img width="3442" height="1968" alt="image" src="https://github.com/user-attachments/assets/a9ee3f27-4401-4cc9-a49d-4870e76c7fa9" />
+
 
 ### 📋 **Context Pane**
 *View conversation history, open tickets, and quick statistics*
 
-![Context Pane](screenshots/context-pane.png)
+
+<img width="3446" height="1886" alt="image" src="https://github.com/user-attachments/assets/54ab9223-3f4b-47f3-b0cc-24a75b7981fd" />
+
+<img width="3432" height="1890" alt="image" src="https://github.com/user-attachments/assets/80b7481e-ca35-48ce-b493-0fc1d696dae7" />
+
 
 ### 🔍 **Trace Viewer**
 *Debug and audit trail showing exactly what actions were performed*
 
-![Trace Viewer](screenshots/trace-viewer.png)
+
+<img width="3442" height="2060" alt="image" src="https://github.com/user-attachments/assets/b2ee7055-14e6-4113-9934-02db3085a517" />
+
 
 ### 📈 **Analytics Dashboard**
 *Real-time metrics and performance indicators*
 
-![Analytics Dashboard](screenshots/analytics-dashboard.png)
+
+<img width="3444" height="1902" alt="image" src="https://github.com/user-attachments/assets/1b353f96-681e-4725-b81a-910dcfd63059" />
 
 ### 🔄 **Conversation Continuity**
 *Sessions persist across visits with full context retention*
 
-![Conversation Continuity](screenshots/conversation-continuity.png)
+
+<img width="3446" height="2068" alt="image" src="https://github.com/user-attachments/assets/ea37def6-d62c-461e-8528-e63d39f5e50b" />
+
+
 
 ---
 
@@ -201,18 +224,6 @@ The application supports three user roles:
 - **Response Time**: < 2 seconds for most operations
 - **Multi-tenancy**: Support for multiple workspaces and teams
 
-## 🌐 Deployment
-
-### Streamlit Community Cloud (Recommended)
-1. Push your code to GitHub
-2. Visit [share.streamlit.io](https://share.streamlit.io)
-3. Connect your GitHub repository
-4. Deploy with one click!
-
-### Alternative Platforms
-- **Heroku**: Professional deployment with custom domains
-- **Railway**: Modern deployment platform with GitHub integration
-- **AWS/GCP/Azure**: Enterprise-grade cloud deployment
 
 ## 🤝 Contributing
 
@@ -223,27 +234,6 @@ We welcome contributions! Please see our contributing guidelines:
 3. Commit your changes (`git commit -m 'Add amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
-
-### 📸 **Adding Screenshots**
-
-To update or add screenshots:
-
-1. **Create screenshots directory**: `mkdir screenshots` (if it doesn't exist)
-2. **Run the application**: `streamlit run app.py`
-3. **Capture screenshots** of key functionalities:
-   - Use consistent browser window size (1920x1080 recommended)
-   - Include both light and dark mode if applicable
-   - Show realistic data and interactions
-   - Crop to focus on relevant UI elements
-4. **Save as PNG** with descriptive names matching the README references
-5. **Optimize file sizes** to keep repository lightweight
-
-### 🎯 **Screenshot Guidelines**
-- **Resolution**: 1920x1080 or consistent aspect ratio
-- **Format**: PNG for UI screenshots, JPG for photos
-- **Naming**: Use kebab-case matching README references
-- **Size**: Optimize to <500KB per image when possible
-- **Content**: Show realistic, meaningful data examples
 
 ## 📄 License
 
