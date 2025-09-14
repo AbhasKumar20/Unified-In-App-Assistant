@@ -2,9 +2,24 @@
 
 A powerful **Streamlit-based financial assistant** that provides unified invoice processing, failure analysis, and support ticket management for financial operations teams.
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-app-url.streamlit.app)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://unified-in-app.streamlit.app/)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+## 🚀 **Try It Live!**
+
+**🌐 Access the live application:** **[https://unified-in-app.streamlit.app/](https://unified-in-app.streamlit.app/)**
+
+*No installation required! Try all features including natural language queries, failure analysis, and ticket creation.*
+
+### 🎮 **Quick Demo Actions**
+Try these commands in the live app:
+- `"Filter invoices for last month, vendor=IndiSky, status=failed"`
+- `"Why did this fail?"`
+- `"Create a ticket and notify me when fixed"`
+- Switch between user roles to see different permissions
+
+---
 
 ## ✨ Features
 
@@ -224,6 +239,27 @@ The application supports three user roles:
 - **Response Time**: < 2 seconds for most operations
 - **Multi-tenancy**: Support for multiple workspaces and teams
 
+## 🌐 Deployment
+
+### 🎉 **Live Application**
+The FinKraft Assistant is deployed and ready to use:
+
+**[🚀 Access Live Demo: https://unified-in-app.streamlit.app/](https://unified-in-app.streamlit.app/)**
+
+### Deploy Your Own Instance
+
+#### Streamlit Community Cloud (Recommended)
+1. Fork this repository
+2. Visit [share.streamlit.io](https://share.streamlit.io)
+3. Connect your GitHub account and select your fork
+4. Set main file path: `app.py`
+5. Deploy with one click!
+
+#### Alternative Platforms
+- **Heroku**: Professional deployment with custom domains
+- **Railway**: Modern deployment platform with GitHub integration
+- **Render**: Simple deployment with automatic builds
+- **AWS/GCP/Azure**: Enterprise-grade cloud deployment
 
 ## 🤝 Contributing
 
