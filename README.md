@@ -38,15 +38,12 @@ A powerful **Streamlit-based financial assistant** that provides unified invoice
 ### 🏠 **Main Dashboard**
 *The main interface showing the chat-based interaction with role switching*
 
-![Main Dashboard]
-
 <img width="3440" height="1972" alt="image" src="https://github.com/user-attachments/assets/45496615-49e6-492a-8af2-41498496e32b" />
 
 
 ### 💬 **Natural Language Processing**
 *Ask questions in plain English and get instant responses*
 
-![Natural Language Query]
 
 <img width="3442" height="1972" alt="image" src="https://github.com/user-attachments/assets/46259236-8a58-4b01-b8a2-e656d287ac02" />
 
@@ -59,7 +56,6 @@ A powerful **Streamlit-based financial assistant** that provides unified invoice
 ### 📊 **Invoice Analysis & Visualization**
 *Interactive charts and detailed invoice breakdowns*
 
-![Invoice Analysis]
 
 <img width="3440" height="1492" alt="image" src="https://github.com/user-attachments/assets/322dfa70-bbed-487a-bf07-cbefad539617" />
 
@@ -67,7 +63,6 @@ A powerful **Streamlit-based financial assistant** that provides unified invoice
 ### 🚨 **Failure Analysis System**
 *Automatic detection and categorization of invoice issues*
 
-![Failure Analysis]
 
 <img width="3442" height="1896" alt="image" src="https://github.com/user-attachments/assets/37fd4823-151e-4ac5-af6d-2b9f6fdfdfcb" />
 
@@ -75,7 +70,6 @@ A powerful **Streamlit-based financial assistant** that provides unified invoice
 ### ✨ **Smart Suggested Actions**
 *One-click ticket creation with contextual suggestions*
 
-![Suggested Actions]
 
 <img width="3444" height="1210" alt="image" src="https://github.com/user-attachments/assets/bcb9f01b-5fce-4c72-9bae-60b630320d23" />
 
@@ -83,7 +77,6 @@ A powerful **Streamlit-based financial assistant** that provides unified invoice
 ### 🎟️ **Support Ticket Management**
 *Integrated ticket creation and tracking system*
 
-![Ticket Creation]
 
 <img width="3450" height="738" alt="image" src="https://github.com/user-attachments/assets/9a151b09-b805-4106-9533-d0267b29ca10" />
 
@@ -91,7 +84,6 @@ A powerful **Streamlit-based financial assistant** that provides unified invoice
 ### 🔐 **Role-Based Access Control**
 *Different interfaces for Financial Analysts, Managers, and Viewers*
 
-![Role Management]
 
 <img width="3442" height="1968" alt="image" src="https://github.com/user-attachments/assets/a9ee3f27-4401-4cc9-a49d-4870e76c7fa9" />
 
@@ -99,7 +91,6 @@ A powerful **Streamlit-based financial assistant** that provides unified invoice
 ### 📋 **Context Pane**
 *View conversation history, open tickets, and quick statistics*
 
-![Context Pane]
 
 <img width="3446" height="1886" alt="image" src="https://github.com/user-attachments/assets/54ab9223-3f4b-47f3-b0cc-24a75b7981fd" />
 
@@ -109,7 +100,6 @@ A powerful **Streamlit-based financial assistant** that provides unified invoice
 ### 🔍 **Trace Viewer**
 *Debug and audit trail showing exactly what actions were performed*
 
-![Trace Viewer]
 
 <img width="3442" height="2060" alt="image" src="https://github.com/user-attachments/assets/b2ee7055-14e6-4113-9934-02db3085a517" />
 
@@ -117,14 +107,12 @@ A powerful **Streamlit-based financial assistant** that provides unified invoice
 ### 📈 **Analytics Dashboard**
 *Real-time metrics and performance indicators*
 
-![Analytics Dashboard]
 
 <img width="3444" height="1902" alt="image" src="https://github.com/user-attachments/assets/1b353f96-681e-4725-b81a-910dcfd63059" />
 
 ### 🔄 **Conversation Continuity**
 *Sessions persist across visits with full context retention*
 
-![Conversation Continuity]
 
 <img width="3446" height="2068" alt="image" src="https://github.com/user-attachments/assets/ea37def6-d62c-461e-8528-e63d39f5e50b" />
 
